@@ -11,7 +11,7 @@ const Routers = () => {
 
     <Router history={history}>
         <Switch>
-            <Route path="/" component={Home}></Route>
+            <Route path="/" component={Home} />
         </Switch>
     </Router> 
     )   

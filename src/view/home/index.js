@@ -1,11 +1,9 @@
-
 import React from 'react'
+import List from '../../components/home/list'
 
-function Home() {
+const Home = () => {
     return (
-        <div>
-        <h1>Funcionou</h1>            
-        </div>
+        <List />
     )
 }
 
