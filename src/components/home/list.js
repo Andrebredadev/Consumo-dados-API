@@ -72,7 +72,6 @@ const List = () => {
     ...mapPoliticians
   ]
 
-
   const handleChangeOption = async (event) => {
     const newId = event.target.value
     return setId(newId)
