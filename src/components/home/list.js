@@ -36,7 +36,7 @@ const List = () => {
   const [isUpdate, setUpdate] = useState(false)
   const [politicians, setPoliticians] = useState([])
   const [politicalParties, setPoliticalParties] = useState([])
-  const [id, setId] = useState(36898)
+  const [id, setId] = useState('AVANTE')
 
   useEffect(() => {
     setUpdate(false)
@@ -92,7 +92,7 @@ const List = () => {
         <FormGroup className={classes.form}>
           <select name="parties" id="parties" onChange={handleChangeOption} >{
             politicalParties.map(data => (
-              <option value={data.id} key={data.id}>{data.nome}</option>
+              <option value={data.sigla} key={data.id}>{data.nome}</option>
             ))}
           </select>
         </FormGroup>
